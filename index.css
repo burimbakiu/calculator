@@ -36,7 +36,7 @@ body {
 }
 .output {
   grid-column: 1 / -1;
-  background-color: rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0, .75);
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -57,7 +57,7 @@ body {
 .tred {
   width: 420px;
   height: 611px;
-  background: linear-gradient(to bottom, #0d3d10, #c0d106);
+  background: linear-gradient(to bottom, #0a8c33, #180b59);
   z-index: -10;
   position: absolute;
   left: 460px;

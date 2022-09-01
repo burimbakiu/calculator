@@ -88,6 +88,7 @@ class Calculator {
     }
   }
 }
+const outputi = document.getElementById("outputt");
 const div2 = document.getElementById("div2");
 const numberButtons = document.querySelectorAll("[data-number]");
 const operationButtons = document.querySelectorAll("[data-operation]");
@@ -123,13 +124,13 @@ operationButtons.forEach((button) => {
 equalsButton.addEventListener("click", (button) => {
   calculator.compute();
   calculator.updateDisplay();
-  div2change();
+  outputinChange();
 });
 
 allClearButton.addEventListener("click", (button) => {
   calculator.clear();
   calculator.updateDisplay();
-  div2toNormal();
+  outputiNormal();
 });
 
 deleteButton.addEventListener("click", (button) => {
@@ -137,12 +138,12 @@ deleteButton.addEventListener("click", (button) => {
   calculator.updateDisplay();
 });
 
-function div2change() {
-  div2.style.background = "linear-gradient(to bottom, #1762a3, #881b8a)";
-  div2.style.transition = "1s";
+function outputinChange() {
+  outputi.style.background = "rgba(4, 121, 16, 0.888)";
+  outputi.style.transition = "1s";
 }
 
-function div2toNormal() {
-  div2.style.background = "linear-gradient(to bottom, #0d3d10, #c0d106)";
-  div2.style.transition = "1s";
+function outputiNormal() {
+  outputi.style.background = " rgba(0, 0, 0, .75)";
+  outputi.style.transition = "1s";
 }
